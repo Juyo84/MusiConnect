@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">musiconnect</string>
+    <string name="title_activity_main">musiconnect</string>
+    <string name="package_name">ionic.musiconnect</string>
+    <string name="custom_url_scheme">ionic.musiconnect</string>
+</resources>
