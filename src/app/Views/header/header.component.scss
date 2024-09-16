@@ -1,0 +1,85 @@
+ion-header {
+
+  height: 8%;
+
+}
+
+.toolbarPrincipal, .toolbarMenu{
+
+  align-items: center;
+  display: flex;
+
+}
+
+.toolbarPrincipal {
+  
+  justify-content: space-between;
+  background: rgb(47, 79, 79);
+  display: flex;
+  height: 100%;
+  
+}
+
+.toolbarMenu {
+  
+  background: rgb(33, 33, 33);
+  height: 90%;
+
+}
+
+#titulo {
+
+  font-weight: bolder;
+  position: relative;
+  font-size: x-large;
+  left: 1%;
+
+}
+
+#usuario {
+
+  position: relative;
+  border-radius: 50%;
+  right: 0.5%;
+  width: 3%;
+
+}
+
+.menu {
+
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  width: 80%;
+  left: 10%;
+
+}
+
+#opcionMenu {
+
+  font-size: large;
+
+}
+
+#opcionMenu:hover {
+
+  border-bottom: 1vh solid rgb(47, 79, 79);
+  font-weight: bold;
+  font-size: larger;
+
+}
+
+.listaOpcionesUsuario {
+
+  padding: 0%;
+
+}
+
+#cerrarSesion {
+
+  --background: red;
+  color: white;
+
+}

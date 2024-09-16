@@ -1,0 +1,34 @@
+<ion-header>
+  
+  <div class="toolbarPrincipal">
+  
+    <p id="titulo">MusiConnect</p>
+    <img alt="NOMBRE USUARIO" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="usuario"/>
+
+    <ion-popover trigger="usuario" side="bottom" alignment="end">
+      <ng-template>
+        <ion-list lines="full" class="listaOpcionesUsuario">
+          <ion-list-header>
+            <p>NOMBRE USUARIO</p>
+          </ion-list-header>
+          <ion-item button>Perfil</ion-item>
+          <ion-item button id="cerrarSesion">Cerrar Sesion</ion-item>
+        </ion-list>
+      </ng-template>
+    </ion-popover>
+  
+  </div>
+  
+  <div class="toolbarMenu">
+  
+    <ion-row class="menu">
+      <ng-content *ngFor="let opcion of opcionesDelMenu">
+        <ion-col (click)="onSegmentChanged(opcion)" id="opcionMenu">
+          {{opcion.titulo}}
+        </ion-col>
+      </ng-content>
+    </ion-row>
+  
+  </div>
+
+</ion-header>
