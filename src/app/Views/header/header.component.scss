@@ -47,7 +47,7 @@ ion-header {
 
   font-weight: bolder;
   position: relative;
-  font-size: x-large;
+  font-size: 5vh;
   left: 1%;
 
 }
@@ -57,7 +57,7 @@ ion-header {
   position: relative;
   border-radius: 50%;
   right: 0.5%;
-  width: 3%;
+  width: 7vh;
 
 }
 
@@ -81,22 +81,22 @@ ion-header {
 
 #opcionMenu {
 
-  font-size: large;
+  font-size: 3vh;
 
 }
 
 #opcionMenu:hover {
 
-  border-bottom: 1vh solid $color-primario;
+  border-bottom: 0.3vw solid $color-primario;
   font-weight: bold;
-  font-size: larger;
+  font-size: 4vh;
 
 }
 
 #iconoDown {
 
   color: $color-primario;
-  font-size: xx-large;
+  font-size: 6vh;
   position: absolute;
   margin: 0 auto;
   width: 100%;
