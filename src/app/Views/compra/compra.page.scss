@@ -1,21 +1,18 @@
+$color-primario: rgb(50, 80, 80);
+$color-secundario: rgb(30, 30, 30);
+
 app-header {
 
     height: 100%;
 
 }
 
-.tituloPagina {
-
-    position: relative;
-
-}
-
 .tituloPagina > #titulo {
 
-    text-align: center;
-    font-size: 5vh;
     font-weight: bolder;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-size: 4.5vh;
     margin-top: 1%;
 
 }
@@ -24,10 +21,95 @@ app-header {
 
     border-top-right-radius: 1%;
     border-top-left-radius: 1%;
-    background-color: white;
+    background-color: black;
     position: relative;
-    height: 81%;
+    min-height: 81%;
     width: 98%;
     left: 1%;
+
+}
+
+#imagenProducto {
+
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 20vw;
+    top: 2vh;
+
+}
+
+#nombreProducto {
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bolder;
+    position: relative;
+    margin-bottom: 0%;
+    font-size: 3.5vh;
+    overflow: hidden;
+    width: 91%;
+    left: 5%;
+
+}
+
+#precioProducto {
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0%;
+    font-size: 3vh;
+    width: 91%;
+    left: 5%;
+
+}
+
+.datosProducto {
+
+    background: white;
+    color: black;
+    width: 100%;
+
+}
+
+.datosProducto:hover {
+
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+
+}
+
+.filtros {
+
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1%;
+    top: 2vh;
+    left: 1%;
+
+}
+
+#selectCategoria {
+
+    left: 10%;
+ 
+}
+
+#selectCategoria, #inputProducto {
+
+    --highlight-color: rgb(50, 80, 80);
+    --border-color: rgb(50, 50, 50);
+    width: 20vw;
+    height: 1vh;
+
+}
+
+.listaProductos {
+
+    position: relative;
+    top: 2vh;
 
 }
