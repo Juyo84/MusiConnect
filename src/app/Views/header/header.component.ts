@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { IonHeader, IonRow, IonCol, IonPopover, IonContent, IonList, IonListHeader, IonItem } from '@ionic/angular/standalone';
+import { IonHeader, IonRow, IonCol, IonPopover, IonContent, IonList, IonListHeader, IonItem, IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
+import { addIcons } from 'ionicons';
+import { caretDown } from 'ionicons/icons';
 
 @Component({
   selector: 'app-header',
@@ -15,11 +17,16 @@ import { NavController } from '@ionic/angular';
     IonHeader,
     IonRow, IonCol,
     IonPopover,
-    IonList, IonListHeader, IonItem],
+    IonList, IonListHeader, IonItem,
+    IonIcon],
 })
 export class HeaderComponent  implements OnInit {
 
-  constructor(private router: Router, private navCtrl: NavController) { }
+  constructor(private router: Router, private navCtrl: NavController) { 
+
+    addIcons({ caretDown });
+
+  }
 
   ngOnInit() { }
   
