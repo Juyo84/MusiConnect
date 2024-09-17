@@ -3,3 +3,31 @@ app-header {
     height: 100%;
 
 }
+
+.tituloPagina {
+
+    position: relative;
+
+}
+
+.tituloPagina > #titulo {
+
+    text-align: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+}
+
+.content {
+
+    border-top-right-radius: 1%;
+    border-top-left-radius: 1%;
+    background-color: white;
+    position: relative;
+    height: 81%;
+    width: 98%;
+    left: 1%;
+
+}
