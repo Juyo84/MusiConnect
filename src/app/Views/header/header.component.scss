@@ -36,10 +36,16 @@ ion-header {
 
 }
 
-
 .toolbarPrincipal:hover + .toolbarMenu, .toolbarMenu:hover {
 
   bottom: 0%;
+
+  #iconoDown {
+
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+
+  }
 
 }
 
@@ -88,6 +94,7 @@ ion-header {
 #opcionMenu:hover {
 
   border-bottom: 0.3vw solid $color-primario;
+  transition: font-size 0.1s ease;
   font-weight: bold;
   font-size: 4vh;
 
@@ -96,9 +103,9 @@ ion-header {
 #iconoDown {
 
   color: $color-primario;
-  font-size: 6vh;
   position: absolute;
   margin: 0 auto;
+  font-size: 6vh;
   width: 100%;
   top: 85%;
 
