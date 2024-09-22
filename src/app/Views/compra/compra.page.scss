@@ -10,6 +10,13 @@ app-header {
 
 }
 
+.tituloPagina, .content {
+
+    position: relative;
+    top: 8%;
+
+}
+
 .tituloPagina > #titulo {
 
     font-weight: bolder;
@@ -24,7 +31,6 @@ app-header {
 
     background-color: black;
     height: max-content;
-    position: relative;
     margin-bottom: 1%;
     border-radius: 1%;
     width: 98%;
