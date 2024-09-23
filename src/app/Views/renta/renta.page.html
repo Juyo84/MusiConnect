@@ -1,0 +1,48 @@
+<ion-content>
+  <app-header></app-header>
+  
+  <div class="tituloPagina">
+
+    <p id="titulo">Renta</p>
+
+  </div>
+
+  <div class="content">
+    
+    <div class="filtros">
+
+      <ion-input label="Busqueda" labelPlacement="stacked" fill="outline" id="inputProducto"></ion-input>
+  
+      <ion-select label="Categoria" interface="popover" labelPlacement="stacked" fill="outline" [multiple]="true" id="selectCategoria">
+        <ion-select-option value="opcion1">Opcion 1</ion-select-option>
+      </ion-select>
+
+      <ion-select label="Tipo Renta" interface="popover" labelPlacement="stacked" fill="outline" [multiple]="true" id="selectTipo">
+        <ion-select-option value="opcion1">Opcion 1</ion-select-option>
+      </ion-select>
+
+    </div>
+
+    <div class="listaProductos">
+      <ion-card class="datosProducto">
+        <div class="rentaMensual">
+          <p id="tipoProducto">M</p>
+        </div>
+        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
+        <p id="nombreProducto">NOMBRE PRODUCTO</p>
+        <p id="precioProducto">$00000.00 por mes</p>
+      </ion-card>
+      
+      <ion-card class="datosProducto">
+        <div class="rentaSemanal">
+          <p id="tipoProducto">S</p>
+        </div>
+        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
+        <p id="nombreProducto">NOMBRE PRODUCTO</p>
+        <p id="precioProducto">$00000.00 por semana</p>
+      </ion-card>
+    </div>
+
+  </div>
+
+</ion-content>
