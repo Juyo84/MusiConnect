@@ -9,9 +9,5 @@ export const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
-  },
-  {
-    path: 'compra',
-    loadComponent: () => import('./Views/compra/compra.page').then( m => m.CompraPage)
   }
 ];
