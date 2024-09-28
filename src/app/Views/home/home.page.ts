@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonContent, IonButton } from '@ionic/angular/standalone';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ import { IonContent, IonButton } from '@ionic/angular/standalone';
     IonButton],
 })
 export class HomePage {
-  constructor() {
+  constructor(private navCtrl: NavController) {
 
     setInterval(() => this.movimientoImagenes(), 3000);
     
@@ -37,6 +38,12 @@ export class HomePage {
       imagenCambio.setAttribute("src", "https://ionicframework.com/docs/img/demos/avatar.svg");
     
     }
+
+  }
+
+  irRuta(ruta: string){
+
+    this.navCtrl.navigateForward(ruta, { animated: false });
 
   }
 
