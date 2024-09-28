@@ -9,5 +9,14 @@ export const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },
+  {
+    path: 'sign-up',
+    loadComponent: () => import('./Views/sign-up/sign-up.page').then( m => m.SignUpPage)
+  },
+  {
+    path: 'log-in',
+    loadComponent: () => import('./Views/log-in/log-in.page').then( m => m.LogInPage)
   }
+
 ];
