@@ -1,0 +1,25 @@
+<ion-content>
+
+  <img src="https://ionicframework.com/docs/img/demos/avatar.svg" id="logo"/>
+
+  <ion-card class="login">
+
+    <div class="contentLogin">
+
+      <p id="titulo">Inicio de Sesion</p>
+
+      <ion-input label="Nombre Usuario" labelPlacement="stacked" fill="outline" id="nombreUsuario"></ion-input>
+  
+      <ion-input type="password" label="Contraseña" labelPlacement="stacked" fill="outline" id="contraseña"></ion-input>
+
+      <ion-button id="iniciarSesion">Iniciar Sesion</ion-button>
+  
+      <p id="contraOlvidada">¿Olvidaste la contraseña?</p>
+  
+      <p id="sinCuenta">¿No tienes cuenta? <span id="creaCuenta" (click)="irRuta('sign-up')">Crea una</span></p>
+  
+    </div>
+    
+  </ion-card>
+
+</ion-content>
