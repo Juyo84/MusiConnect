@@ -2,7 +2,7 @@
   
   <div class="toolbarPrincipal">
   
-    <p id="titulo">MusiConnect</p>
+    <p id="titulo" (click)="irRuta('inicio')">MusiConnect</p>
     <img alt="NOMBRE USUARIO" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="usuarioAvatar"/>
 
     <ion-popover trigger="usuarioAvatar" side="bottom" alignment="end">
@@ -11,8 +11,8 @@
           <ion-list-header>
             <p>NOMBRE USUARIO</p>
           </ion-list-header>
-          <ion-item button>Perfil</ion-item>
-          <ion-item button>Cerrar Sesion</ion-item>
+          <ion-item button (click)="irRuta('perfil')">Perfil</ion-item>
+          <ion-item button (click)="irRuta('home')">Cerrar Sesion</ion-item>
         </ion-list>
       </ng-template>
     </ion-popover>
@@ -23,7 +23,7 @@
   
     <ion-row class="menu">
       <ng-content *ngFor="let opcion of opcionesDelMenu">
-        <ion-col (click)="onSegmentChanged(opcion)" id="opcionMenu">
+        <ion-col (click)="irRuta(opcion.ruta)" id="opcionMenu">
           {{opcion.titulo}}
         </ion-col>
       </ng-content>

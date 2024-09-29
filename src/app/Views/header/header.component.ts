@@ -31,16 +31,15 @@ export class HeaderComponent  implements OnInit {
   ngOnInit() { }
   
   opcionesDelMenu = [
-    { titulo: "Home", ruta: "/home" },
     { titulo: "Compra", ruta: "/compra" },
     { titulo: "Renta", ruta: "/renta" },
     { titulo: "Videos", ruta: "/videos" },
     { titulo: "Cursos", ruta: "/cursos" }
   ];
 
-  onSegmentChanged(opcion: any) {
+  irRuta(ruta: string) {
     
-    this.navCtrl.navigateForward(opcion.ruta, { animated: false });
+    this.navCtrl.navigateForward(ruta, { animated: false });
     //this.router.navigate([opcion.ruta]);
 
   }
