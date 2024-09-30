@@ -19,6 +19,10 @@ export const routes: Routes = [
     loadComponent: () => import('./Views/log-in/log-in.page').then( m => m.LogInPage)
   },
   {
+    path: 'compra',
+    loadComponent: () => import('./Views/compra/compra.page').then( m => m.CompraPage)
+  },
+  {
     path: 'inicio',
     loadComponent: () => import('./Views/inicio/inicio.page').then( m => m.InicioPage)
   },
