@@ -1,0 +1,35 @@
+<ion-content>
+
+  <img src="https://ionicframework.com/docs/img/demos/avatar.svg" id="logo"/>
+
+  <ion-card class="signin">
+
+    <div class="contentSigin">
+
+      <p id="titulo">Crear Cuenta</p>
+
+      <div class="inputsDatos">
+
+        <ion-input label="Nombre Usuario" labelPlacement="stacked" fill="outline" id="nombreUsuario"></ion-input>
+  
+        <ion-input label="Correo" labelPlacement="stacked" fill="outline" id="correo"></ion-input>
+
+      </div>
+
+      <div class="inputsContraseñas">
+
+        <ion-input type="password" label="Contraseña" labelPlacement="stacked" fill="outline" id="contraseña"></ion-input>
+  
+        <ion-input type="password" label="Repetir Contraseña" labelPlacement="stacked" fill="outline" id="repetirContraseña"></ion-input>
+
+      </div>
+
+      <ion-button id="crearCuenta" (click)="irRuta('inicio')">Ingresar</ion-button>
+
+      <p id="conCuenta">¿Ya tienes una cuenta? <span id="iniciarSesion" (click)="irRuta('log-in')">Inicia sesion</span></p>
+  
+    </div>
+    
+  </ion-card>
+
+</ion-content>

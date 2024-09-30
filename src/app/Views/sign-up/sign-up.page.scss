@@ -1,0 +1,109 @@
+#logo {
+
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    width: 10%;
+    left: 45%;
+    top: 5%;
+
+}
+
+.signin {
+
+    --background: white;
+    position: absolute;
+    border-radius: 5%;
+    height: 75%;
+    width: 50%;
+    margin: 0%;
+    left: 25%;
+    top: 15%;
+
+}
+
+.contentSigin {
+
+    flex-direction: column;
+    position: relative;
+    flex-wrap: nowrap;
+    display: flex;
+    width: 100%;
+    height: 83%;
+    top: 17%;
+
+}
+
+#titulo {
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 4vh;
+    color: black;
+
+}
+
+.inputsDatos, .inputsContraseñas {
+
+    position: relative;
+ 
+}
+
+.inputsContraseñas {
+
+    top: 25%;
+
+}
+
+#nombreUsuario, #contraseña, #repetirContraseña, #correo {
+
+    --highlight-color: rgb(50, 80, 80);
+    --border-color: black;
+    position: absolute;
+    color: black;
+    width: 43%;
+
+}
+
+#nombreUsuario, #contraseña {
+
+    left: 5%;
+
+}
+
+
+#correo, #repetirContraseña {
+
+    left: 52%;
+
+}
+
+#crearCuenta {
+
+    --background: blue;
+    position: relative;
+    color: white;
+    margin: 0%;
+    width: 90%;
+    left: 5%;
+    top: 45%;
+
+}
+
+#conCuenta {
+
+
+    position: relative;
+    text-align: center;
+    font-size: 2.5vh;
+    margin-top: 0%;
+    color: black;
+    top: 62%;
+
+}
+
+#iniciarSesion {
+
+    color: blue;
+
+}

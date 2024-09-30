@@ -11,7 +11,22 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'compra',
-    loadComponent: () => import('./Views/compra/compra.page').then( m => m.CompraPage)
+    path: 'sign-up',
+    loadComponent: () => import('./Views/sign-up/sign-up.page').then( m => m.SignUpPage)
+  },
+  {
+    path: 'log-in',
+    loadComponent: () => import('./Views/log-in/log-in.page').then( m => m.LogInPage)
+  },
+  {
+    path: 'inicio',
+    loadComponent: () => import('./Views/inicio/inicio.page').then( m => m.InicioPage)
+  },
+  {
+    path: 'perfil',
+    loadComponent: () => import('./Views/perfil/perfil.page').then( m => m.PerfilPage)
   }
+
+
+
 ];
