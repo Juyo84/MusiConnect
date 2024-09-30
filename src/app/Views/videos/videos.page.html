@@ -3,7 +3,7 @@
     
     <div class="tituloPagina">
   
-      <p id="titulo">Compra</p>
+      <p id="titulo">Videos</p>
   
     </div>
   
@@ -20,32 +20,32 @@
       </div>
   
       <div class="listaVideos">
-        <ion-card class="datosVideo">
+        <ion-card class="datosVideo" (click)="abrirReproductor('idVideo')">
           <img alt="Video" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenVideo"/>
           <p id="tituloVideo">TITULO VIDEO</p>
         </ion-card>
 
-        <ion-card class="datosVideo">
+        <ion-card class="datosVideo" (click)="abrirReproductor('idVideo')">
           <img alt="Video" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenVideo"/>
           <p id="tituloVideo">TITULO VIDEO</p>
         </ion-card>
 
-        <ion-card class="datosVideo">
+        <ion-card class="datosVideo" (click)="abrirReproductor('idVideo')">
           <img alt="Video" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenVideo"/>
           <p id="tituloVideo">TITULO VIDEO</p>
         </ion-card>
 
-        <ion-card class="datosVideo">
+        <ion-card class="datosVideo" (click)="abrirReproductor('idVideo')">
           <img alt="Video" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenVideo"/>
           <p id="tituloVideo">TITULO VIDEO</p>
         </ion-card>
 
-        <ion-card class="datosVideo">
+        <ion-card class="datosVideo" (click)="abrirReproductor('idVideo')">
           <img alt="Video" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenVideo"/>
           <p id="tituloVideo">TITULO VIDEO</p>
         </ion-card>
 
-        <ion-card class="datosVideo">
+        <ion-card class="datosVideo" (click)="abrirReproductor('idVideo')">
           <img alt="Video" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenVideo"/>
           <p id="tituloVideo">TITULO VIDEO</p>
         </ion-card>
@@ -53,6 +53,16 @@
       </div>
   
     </div>
+
+    <ion-modal [canDismiss]="!modalVideo" [isOpen]="modalVideo" class="reproductorVideo">
+      <ng-template>
+
+        <p id="tituloReproductor">TITULO VIDEO</p>
+        <ion-icon name="close" id="iconoCerrar" (click)="modalVideo = false"></ion-icon>
+        <video src="rutaVideo" controls autoplay id="video"></video>
+
+      </ng-template>
+    </ion-modal>
   
   </ion-content>
   

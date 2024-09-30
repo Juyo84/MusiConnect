@@ -120,3 +120,65 @@ app-header {
     content: "";
 
 }
+
+.reproductorVideo {
+
+    --background: white;
+    height: 80%;
+    width: 97%;
+    top: 19%;
+    left: 1%;
+
+}
+
+#tituloReproductor {
+
+    transition: opacity 0.1s ease;
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    z-index: 2;
+    opacity: 1;
+    width: 80%;
+    left: 1%;
+    top: -4%;
+
+}
+
+#iconoCerrar {
+
+    transition: opacity 0.1s ease;
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    z-index: 2;
+    opacity: 0;
+    left: 97%;
+    top: 2%;
+
+}
+
+#video {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.reproductorVideo:hover {
+
+    #tituloReproductor {
+
+        opacity: 0;
+
+    }
+
+    #iconoCerrar {
+
+        opacity: 1;
+
+    }
+
+}
