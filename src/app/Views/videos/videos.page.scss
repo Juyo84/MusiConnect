@@ -37,16 +37,17 @@ app-header {
     left: 1%;
 
 }
-#imagenProducto {
 
-    margin: 5% auto 3% auto;
+#imagenVideo {
+
+    margin: 2% auto;
     position: relative;
     display: block;
-    width: 85%;
+    width: 73%;
 
 }
 
-#nombreProducto {
+#tituloVideo {
 
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -60,31 +61,18 @@ app-header {
 
 }
 
-#precioProducto {
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-    font-size: 3vh;
-    margin: 2% auto;
-    width: 85%;
-    top: 5%;
-
-}
-
-.datosProducto {
+.datosVideo {
 
     transition: all 0.5s ease;
     box-sizing: border-box;
     background: white;
     color: black;
     height: 100%;
-    width: 23%;
+    width: 31%;
 
 }
 
-.datosProducto:hover {
+.datosVideo:hover {
 
     transform: scale(1.1);
 
@@ -107,7 +95,7 @@ app-header {
  
 }
 
-#selectCategoria, #inputProducto {
+#selectCategoria, #inputVideo {
 
     --highlight-color: rgb(50, 80, 80);
     --border-color: rgb(50, 50, 50);
@@ -115,7 +103,7 @@ app-header {
 
 }
 
-.listaProductos {
+.listaVideos {
 
     justify-content: space-around;
     margin: 1% auto 1% auto;
@@ -125,10 +113,72 @@ app-header {
 
 }
 
-.listaProductos::after {
+.listaVideos::after {
 
     visibility: hidden;
-    flex: 1 1 23%;
+    flex: 1 1 31%;
     content: "";
+
+}
+
+.reproductorVideo {
+
+    --background: white;
+    height: 80%;
+    width: 97%;
+    top: 19%;
+    left: 1%;
+
+}
+
+#tituloReproductor {
+
+    transition: opacity 0.1s ease;
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    z-index: 2;
+    opacity: 1;
+    width: 80%;
+    left: 1%;
+    top: -4%;
+
+}
+
+#iconoCerrar {
+
+    transition: opacity 0.1s ease;
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    z-index: 2;
+    opacity: 0;
+    left: 97%;
+    top: 2%;
+
+}
+
+#video {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.reproductorVideo:hover {
+
+    #tituloReproductor {
+
+        opacity: 0;
+
+    }
+
+    #iconoCerrar {
+
+        opacity: 1;
+
+    }
 
 }

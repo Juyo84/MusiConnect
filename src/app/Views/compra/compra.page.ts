@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent} from '@ionic/angular/standalone';
+import { IonContent, IonInput, IonSelect, IonSelectOption, IonCol, IonCard, IonCardContent, IonRow} from '@ionic/angular/standalone';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({
@@ -7,7 +7,13 @@ import { HeaderComponent } from '../header/header.component';
   templateUrl: './compra.page.html',
   styleUrls: ['./compra.page.scss'],
   standalone: true,
-  imports: [IonContent, HeaderComponent]
+  imports: [
+    IonContent,
+    HeaderComponent,
+    IonInput,
+    IonSelect, IonSelectOption,
+    IonCol, IonRow,
+    IonCard, IonCardContent]
 })
 export class CompraPage implements OnInit {
 

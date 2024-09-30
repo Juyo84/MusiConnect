@@ -1,0 +1,112 @@
+$color-primario: rgb(50, 80, 80);
+$color-secundario: rgb(30, 30, 30);
+
+app-header {
+
+    position: sticky;
+    height: 100%;
+    z-index: 10;
+    top: 0%;
+
+}
+
+.content {
+
+    background-color: white;
+    position: relative;
+    margin-bottom: 1%;
+    height: 92%;
+    width: 100%;
+    top: 8%;
+
+}
+
+.contenidoBienvenida {
+
+    background-image: url("https://ionicframework.com/docs/img/demos/avatar.svg"); 
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#bienvenida {
+
+    text-align: center;
+    font-weight: 900;
+    font-size: 10vh;
+    color: white;
+
+}
+
+.contenidoModulo {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+.contenidoIzquierda {
+
+    background-color: $color-secundario;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 50%;
+
+
+}
+
+.contenidoDerecha {
+
+    background-color: $color-secundario;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+
+}
+
+.imagen {
+
+    background-color: $color-primario;
+
+}
+
+#imagenModulo {
+
+    object-fit: scale-down;
+    position: relative;
+    height: 80%;
+    width: 90%;
+
+}
+
+#nombreModulo {
+
+    text-align: center;
+    font-size: 8vh;
+    font-weight: 600;
+
+}
+
+#descripcionModulo {
+
+    text-align: center;
+    font-size: 5vh;
+
+}
