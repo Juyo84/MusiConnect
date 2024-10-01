@@ -12,13 +12,12 @@ import { NavController } from '@ionic/angular';
     IonButton],
 })
 export class HomePage {
-  constructor(private navCtrl: NavController) {
+  constructor(private navCtrl: NavController) { }
+  
+  ngOnInit() {
 
     setInterval(() => this.movimientoImagenes(), 3000);
     
-  }
-  
-  ngOnInit() {
   }
 
   movimientoImagenes(){
