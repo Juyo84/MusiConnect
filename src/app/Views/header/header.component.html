@@ -3,20 +3,20 @@
   <div class="toolbarPrincipal">
   
     <p id="titulo" (click)="irRuta('inicio')">MusiConnect</p>
-    <img alt="NOMBRE USUARIO" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="usuarioAvatar"/>
+    <img alt="NOMBRE USUARIO" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="usuarioAvatar" (click)="cambiarEstadoSubmenu()"/>
 
-    <ion-popover trigger="usuarioAvatar" side="bottom" alignment="end">
-      <ng-template>
-        <ion-list lines="full" class="listaOpcionesUsuario">
-          <ion-list-header>
-            <p>NOMBRE USUARIO</p>
-          </ion-list-header>
-          <ion-item button (click)="irRuta('perfil')">Perfil</ion-item>
-          <ion-item button (click)="irRuta('home')">Cerrar Sesion</ion-item>
-        </ion-list>
-      </ng-template>
-    </ion-popover>
-  
+    <div id="submenuUsuario" [ngClass]="{'mostrar': estadoSubmenuUsuario, 'ocultar': !estadoSubmenuUsuario}">
+
+      <ion-list lines="full" class="listaOpcionesUsuario">
+        <ion-list-header>
+          <p>NOMBRE USUARIO</p>
+        </ion-list-header>
+        <ion-item button (click)="irRuta('perfil')">Perfil</ion-item>
+        <ion-item button (click)="irRuta('home')">Cerrar Sesion</ion-item>
+      </ion-list>
+
+    </div>
+
   </div>
 
   <div class="toolbarMenu">

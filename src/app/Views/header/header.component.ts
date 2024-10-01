@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 import { IonHeader, IonRow, IonCol, IonPopover, IonContent, IonList, IonListHeader, IonItem, IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
@@ -22,7 +22,7 @@ import { caretDown } from 'ionicons/icons';
 })
 export class HeaderComponent  implements OnInit {
 
-  constructor(private router: Router, private navCtrl: NavController) { 
+  constructor(private navCtrl: NavController, private eRef: ElementRef) { 
 
     addIcons({ caretDown });
 
@@ -37,10 +37,28 @@ export class HeaderComponent  implements OnInit {
     { titulo: "Cursos", ruta: "/cursos" }
   ];
 
+  estadoSubmenuUsuario = false;
+
   irRuta(ruta: string) {
     
     this.navCtrl.navigateForward(ruta, { animated: false });
-    //this.router.navigate([opcion.ruta]);
+
+  }
+
+  cambiarEstadoSubmenu() {
+
+    this.estadoSubmenuUsuario = !this.estadoSubmenuUsuario;
+
+  }
+
+  @HostListener('document:click', ['$event'])
+  clickOut(event: any) {
+
+    if (!this.eRef.nativeElement.contains(event.target)) {
+    
+      this.estadoSubmenuUsuario = false;
+    
+    }
 
   }
 
