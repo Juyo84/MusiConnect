@@ -1,0 +1,152 @@
+$color-primario: rgb(50, 80, 80);
+$color-secundario: rgb(30, 30, 30);
+
+app-header {
+
+    position: sticky;
+    height: 100%;
+    z-index: 10;
+    top: 0%;
+
+}
+
+.tituloPagina, .content {
+
+    position: relative;
+    top: 8%;
+
+}
+
+.tituloPagina > #titulo {
+
+    font-weight: bolder;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-size: 4.5vh;
+    margin-top: 1%;
+
+}
+
+.content {
+
+    background-color: black;
+    min-height: min-content;
+    position: relative;
+    margin-bottom: 1%;
+    border-radius: 1%;
+    width: 98%;
+    left: 1%;
+    height: 80%;
+
+}
+
+.filtros {
+
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    height: 79%;
+    width: 30%;
+    left: 69%;
+    top: 19%;
+
+}
+
+#selectCategoria, #inputProducto {
+
+    --highlight-color: rgb(50, 80, 80);
+    --border-color: rgb(50, 50, 50);
+    width: 80%;
+
+}
+
+#inputProducto {
+
+    top: 30%;
+
+}
+
+#selectCategoria {
+
+    top: 40%;
+
+}
+
+.datosCurso {
+
+    transition: all .5s ease;
+    box-sizing: border-box;
+    background: white;
+    align-items: center;
+    color: black;
+    display: flex;
+    height: 100%;
+    width: 98%;
+
+}
+
+.datosCurso:hover {
+
+    transform: scale(1.03);
+
+}
+
+.listaCursos {
+
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    width: 70%;
+    top: 1%;
+
+}
+
+.listaCursos::after {
+
+    visibility: hidden;
+    flex: 1 1 23%;
+    content: "";
+
+}
+
+#nombreCurso {
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bolder;
+    position: absolute;
+    overflow: hidden;
+    font-size: 4vh;
+    width: 40%;
+    left: 2%;
+
+}
+
+#imagenCurso {
+
+    position: relative;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 10%;
+    left: 45%;
+
+}
+
+#precioCurso {
+
+    position: absolute;
+    font-size: 4vh;
+    width: 25%;
+    left: 60%;
+
+}
+
+#iconoAdd {
+
+    position: absolute;
+    font-size: 7vh;
+    left: 92%;
+
+}
