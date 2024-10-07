@@ -9,7 +9,26 @@
 
   <div class="content">
     
+    <div class="listaCursos">
+      
+      <ion-card class="datosCurso">
+        <img alt="Curso" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCurso"/>
+        <p id="nombreCurso">NOMBRE CURSO</p>
+        <p id="precioCurso">$00000.00</p>
+        <ion-icon name="add-circle-outline" id="iconoAdd"></ion-icon>
+      </ion-card>
+  
+      <div class="filtros">
+  
+        <ion-input label="Busqueda" labelPlacement="stacked" fill="outline" id="inputProducto"></ion-input>
     
+        <ion-select label="Categoria" interface="popover" labelPlacement="stacked" fill="outline" [multiple]="true" id="selectCategoria">
+          <ion-select-option value="opcion1">Opcion 1</ion-select-option>
+        </ion-select>
+    
+      </div>
+  
+    </div>
 
   </div>
 

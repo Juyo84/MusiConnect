@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard } from '@ionic/angular/standalone';
+import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard, IonIcon } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../header/header.component';
+import { addCircleOutline } from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'app-cursos',
@@ -12,12 +14,17 @@ import { HeaderComponent } from '../header/header.component';
     HeaderComponent,
     IonInput,
     IonSelect, IonSelectOption,
-    IonCard
+    IonCard,
+    IonIcon
   ]
 })
 export class CursosPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+    addIcons({ addCircleOutline });
+
+   }
 
   ngOnInit() {
   }
