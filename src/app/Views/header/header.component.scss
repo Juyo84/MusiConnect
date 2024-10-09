@@ -70,7 +70,7 @@ ion-header {
 
 #submenuUsuario {
 
-  transition: transform 0.1s ease;
+  transition: opacity 0.2s ease;
   position: absolute;
   height: 100%;
   width: 20%;
@@ -82,13 +82,14 @@ ion-header {
 #submenuUsuario.mostrar {
 
   transform: scaleY(1);
+  opacity: 100;
 
 }
 
 #submenuUsuario.ocultar {
 
   transform: scaleY(0);
-
+  opacity: 0;
 
 }
 
