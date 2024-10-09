@@ -17,6 +17,13 @@
         <ion-select-option value="opcion1">Opcion 1</ion-select-option>
       </ion-select>
 
+      <ion-icon name="cart" id="carritoIcon"></ion-icon>
+      <ion-popover trigger="carritoIcon" side="bottom" alignment="end" size="auto" class="popoverCarrito">
+        <ng-template>
+          <app-carrito></app-carrito>
+        </ng-template>
+      </ion-popover>
+
     </div>
 
     <div class="listaProductos">
