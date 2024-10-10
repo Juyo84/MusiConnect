@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IonIcon, IonPopover, IonList, IonItem } from '@ionic/angular/standalone';
+import { IonPopover, IonList, IonItem } from '@ionic/angular/standalone';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-carrito',
@@ -12,8 +13,14 @@ import { IonIcon, IonPopover, IonList, IonItem } from '@ionic/angular/standalone
 })
 export class CarritoComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
+
+  irListaCarrito() {
+
+    this.navCtrl.navigateForward('lista-carrito', { animated: false });
+  
+  }
 
 }

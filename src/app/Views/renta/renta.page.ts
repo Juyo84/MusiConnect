@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard } from '@ionic/angular/standalone';
+import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard, IonIcon, IonPopover } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../header/header.component';
+import { addIcons } from 'ionicons';
+import { cart } from 'ionicons/icons';
+import { CarritoComponent } from '../carrito/carrito.component';
 
 @Component({
   selector: 'app-renta',
@@ -12,12 +15,19 @@ import { HeaderComponent } from '../header/header.component';
     HeaderComponent,
     IonInput,
     IonSelect, IonSelectOption,
-    IonCard
+    IonCard,
+    IonIcon,
+    CarritoComponent,
+    IonPopover
   ]
 })
 export class RentaPage implements OnInit {
 
-  constructor() { }
+  constructor() { 
+
+    addIcons({ cart });
+
+  }
 
   ngOnInit() {
   }

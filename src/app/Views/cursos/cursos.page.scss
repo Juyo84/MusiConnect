@@ -150,3 +150,18 @@ app-header {
     left: 92%;
 
 }
+
+#carritoIcon {
+
+    color: $color-primario;
+    position: relative;
+    font-size: 10vh;
+    top: 8%;
+    
+}
+
+.popoverCarrito {
+
+    --width: 35%;
+
+}

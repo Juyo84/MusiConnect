@@ -1,0 +1,189 @@
+$color-primario: rgb(50, 80, 80);
+$color-secundario: rgb(30, 30, 30);
+
+app-header {
+
+    position: sticky;
+    height: 100%;
+    z-index: 10;
+    top: 0%;
+
+}
+
+.tituloPagina, .content {
+
+    position: relative;
+    top: 8%;
+
+}
+
+.tituloPagina > #titulo {
+
+    font-weight: bolder;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-size: 4.5vh;
+    margin-top: 1%;
+
+}
+
+.content {
+
+    background-color: black;
+    min-height: min-content;
+    position: relative;
+    margin-bottom: 1%;
+    border-radius: 1%;
+    width: 98%;
+    left: 1%;
+    height: 80%;
+
+}
+
+.datosProductoCarrito {
+
+    --background: black;
+    align-items: center;
+    display: flex;
+    
+}
+
+#imagenCarrito {
+
+    border-radius: 25%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 10%;
+
+}
+
+#nombreCarrito, #precioUnitarioCarrito, #precioFinalCarrito, #compraCarrito, #rentaCarrito, #cursoCarrito {
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 4vh;
+    
+}
+
+#nombreCarrito {
+    
+    position: absolute;
+    width: 45%;
+    left: 12%;
+    top: 2%;
+    
+}
+
+#precioUnitarioCarrito {
+
+    position: absolute;
+    width: 45%;
+    bottom: 0%;
+    left: 12%;
+
+}
+
+#precioFinalCarrito {
+
+    position: absolute;
+    text-align: center;
+    width: 15%;
+    left: 60%;
+
+}
+
+.tipoCarrito {
+
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    width: 15%;
+    left: 68%;
+
+}
+
+#eliminarProducto {
+
+    color: $color-primario;
+    position: relative;
+    font-size: 5vh;
+    left: 71%;
+
+}
+
+#botonComprar {
+
+    --background: rgb(50, 80, 80);
+    color: white;
+    
+}
+
+.resumenCarrito {
+    
+    justify-content: space-around;
+    border: 0.1vh solid white;
+    background-color: black;
+    align-items: center;
+    position: sticky;
+    color: white;
+    font-size: 4vh;
+    display: flex;
+    bottom: 0%;
+    z-index: 1;
+    
+}
+
+.totalCarrito {
+    
+    font-weight: bold;
+
+}
+
+#totalFinal {
+
+    font-weight: 100;
+
+}
+
+.headerLista {
+
+    font-weight: bold;
+    font-size: 3.5vh;
+    display: flex;
+
+}
+
+#labelDatosProducto {
+
+    position: relative;
+    text-align: center;
+    width: 57%;
+
+}
+
+#labelPrecioTotal {
+
+    position: relative;
+    text-align: center;
+    width: 15%;
+    left: 3%;
+
+}
+
+#labelTipoProducto {
+
+    position: relative;
+    text-align: center;
+    width: 15%;
+    left: 5%;
+
+}
+
+#labelEliminar {
+
+    position: relative;
+    text-align: center;
+    left: 6%;
+
+}

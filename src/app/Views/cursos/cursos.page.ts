@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard, IonIcon } from '@ionic/angular/standalone';
+import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard, IonIcon, IonPopover } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../header/header.component';
-import { addCircleOutline } from 'ionicons/icons';
+import { addCircleOutline, cart } from 'ionicons/icons';
 import { addIcons } from 'ionicons';
+import { CarritoComponent } from '../carrito/carrito.component';
 
 @Component({
   selector: 'app-cursos',
@@ -15,14 +16,16 @@ import { addIcons } from 'ionicons';
     IonInput,
     IonSelect, IonSelectOption,
     IonCard,
-    IonIcon
+    IonIcon,
+    CarritoComponent,
+    IonPopover
   ]
 })
 export class CursosPage implements OnInit {
 
   constructor() {
 
-    addIcons({ addCircleOutline });
+    addIcons({ addCircleOutline, cart });
 
    }
 

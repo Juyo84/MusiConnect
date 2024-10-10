@@ -41,7 +41,12 @@ export const routes: Routes = [
   {
     path: 'cursos',
     loadComponent: () => import('./Views/cursos/cursos.page').then( m => m.CursosPage)
+  },
+  {
+    path: 'lista-carrito',
+    loadComponent: () => import('./Views/lista-carrito/lista-carrito.page').then( m => m.ListaCarritoPage)
   }
+
 
 
 
