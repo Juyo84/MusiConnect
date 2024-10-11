@@ -20,6 +20,8 @@
   
       <div class="filtros">
   
+        <ion-icon name="cart" id="carritoIcon"></ion-icon>
+        
         <ion-input label="Busqueda" labelPlacement="stacked" fill="outline" id="inputProducto"></ion-input>
     
         <ion-select label="Categoria" interface="popover" labelPlacement="stacked" fill="outline" [multiple]="true" id="selectCategoria">
@@ -27,6 +29,12 @@
         </ion-select>
     
       </div>
+
+      <ion-popover trigger="carritoIcon" side="bottom" alignment="end" size="auto" [dismissOnSelect]="true" class="popoverCarrito">
+        <ng-template>
+          <app-carrito></app-carrito>
+        </ng-template>
+      </ion-popover>
   
     </div>
 

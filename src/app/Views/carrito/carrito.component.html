@@ -1,0 +1,32 @@
+<ion-list lines="full">
+  <ion-item [button]="true" class="datosProductoCarrito">
+    <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
+    <p id="nombreCarrito">Nombre Producto</p>
+    <p id="precioCarrito">$00000.00</p>
+    <div class="tipoCarrito">
+      <p id="tipoCarrito">C</p>
+      <p id="cantidadCompra">x1000</p>
+    </div>
+  </ion-item>
+  <ion-item [button]="true" class="datosProductoCarrito">
+    <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
+    <p id="nombreCarrito">Nombre Producto</p>
+    <p id="precioCarrito">$00000.00</p>
+    <div class="tipoCarrito">
+      <p id="tipoCarrito">R</p>
+      <p id="tiempoRenta">S</p>
+    </div>
+  </ion-item>
+  <ion-item [button]="true" class="datosProductoCarrito">
+    <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
+    <p id="nombreCarrito">Nombre Producto</p>
+    <p id="precioCarrito">$00000.00</p>
+    <div class="tipoCarrito">
+      <p id="tipoCarrito">CO</p>
+    </div>
+  </ion-item>
+</ion-list>
+<div class="resumenCarrito">
+  <p id="verCarrito" (click)="irListaCarrito()">Ver todo</p>
+  <p class="totalCarrito">Total: <span id="totalFinal">$00000.00</span></p>
+</div>
