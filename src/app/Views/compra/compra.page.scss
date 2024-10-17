@@ -1,8 +1,9 @@
 app-header {
 
-    position: sticky;
-    height: 100%;
+    position: relative;
+    width: 100%;
     z-index: 10;
+    height: 8%;
     top: 0%;
 
 }
@@ -17,7 +18,6 @@ ion-content {
 
     position: relative;
     color: black;
-    top: 8%;
 
 }
 
@@ -147,7 +147,7 @@ ion-content {
 
 #carritoIcon {
 
-    color: $color-primario;
+    color: black;
     position: relative;
     font-size: 8vh;
     left: 54%;

@@ -1,26 +1,30 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
-
 app-header {
 
-    position: sticky;
-    height: 100%;
+    position: relative;
+    width: 100%;
     z-index: 10;
+    height: 8%;
     top: 0%;
+
+}
+
+ion-content {
+
+    --background: #FFE1FF;
 
 }
 
 .tituloPagina, .content {
 
     position: relative;
-    top: 8%;
+    color: black;
 
 }
 
 .tituloPagina > #titulo {
 
     font-weight: bolder;
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
     text-align: center;
     font-size: 4.5vh;
     margin-top: 1%;
@@ -29,7 +33,7 @@ app-header {
 
 .content {
 
-    background-color: black;
+    background-color: white;
     height: max-content;
     margin-bottom: 1%;
     border-radius: 1%;
@@ -175,7 +179,7 @@ app-header {
 
 #carritoIcon {
 
-    color: $color-primario;
+    color: black;
     position: relative;
     font-size: 8vh;
     left: 34%;

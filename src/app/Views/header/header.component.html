@@ -9,10 +9,10 @@
 
       <ion-list lines="full" class="listaOpcionesUsuario">
         <ion-list-header>
-          <p>NOMBRE USUARIO</p>
+          <p id="nombreUsuario">NOMBRE USUARIO</p>
         </ion-list-header>
-        <ion-item button (click)="irRuta('perfil')">Perfil</ion-item>
-        <ion-item button (click)="irRuta('home')">Cerrar Sesion</ion-item>
+        <ion-item button id="perfil" (click)="irRuta('perfil')">Perfil</ion-item>
+        <ion-item button id="cerrarSesion" (click)="irRuta('home')">Cerrar Sesion</ion-item>
       </ion-list>
 
     </div>

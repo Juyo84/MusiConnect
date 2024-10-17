@@ -1,12 +1,19 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
+$color-primario: #433878;
+$color-secundario: #E4B1F0;
 
 app-header {
 
-    position: sticky;
-    height: 100%;
+    position: relative;
+    width: 100%;
     z-index: 10;
+    height: 8%;
     top: 0%;
+
+}
+
+ion-content {
+
+    --background: #FFE1FF;
 
 }
 
@@ -14,10 +21,8 @@ app-header {
 
     background-color: $color-secundario;
     position: relative;
-    margin-bottom: 1%;
     height: 92%;
     width: 100%;
-    top: 6%;
 
 }
 
