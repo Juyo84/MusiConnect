@@ -33,13 +33,12 @@
         </select>
       </div>
       
-      <ion-icon name="cart" id="carritoIcon"></ion-icon>
-      <ion-popover trigger="carritoIcon" side="bottom" alignment="end" size="auto" [dismissOnSelect]="true" class="popoverCarrito">
-        <ng-template>
-          <app-carrito></app-carrito>
-        </ng-template>
-      </ion-popover>
+      <ion-icon name="cart" id="carritoIcon" (click)="cambiarEstadoCarrito()"></ion-icon>
+      
+    </div>
 
+    <div id="popoverCarrito" [ngClass]="{'mostrar': estadoCarrito, 'ocultar': !estadoCarrito}">
+      <app-carrito></app-carrito>
     </div>
 
     <div class="listaProductos">

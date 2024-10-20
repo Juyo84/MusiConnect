@@ -149,13 +149,34 @@ ion-content {
 
     color: black;
     position: relative;
-    font-size: 8vh;
-    left: 54%;
+    font-size: 10vh;
+    left: 45%;
     
 }
 
-.popoverCarrito {
+#popoverCarrito {
 
-    --width: 35%;
+    border: 2px solid black;
+    transition: opacity 0.1s ease;
+    position: absolute;
+    border-radius: 1%;
+    z-index: 1000;
+    height: 42%;
+    width: 40%;
+    left: 57%;
+
+}
+
+#popoverCarrito.mostrar {
+
+    transform: scaleY(1);
+    opacity: 100;
+
+}
+
+#popoverCarrito.ocultar {
+
+    transform: scaleY(0);
+    opacity: 0;
 
 }
