@@ -1,33 +1,37 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
+$color-primario: #433878;
+$color-secundario: #E4B1F0;
 
 app-header {
 
-    position: sticky;
-    height: 100%;
+    position: relative;
+    width: 100%;
     z-index: 10;
+    height: 8%;
     top: 0%;
+
+}
+
+ion-content {
+
+    --background: #FFE1FF;
 
 }
 
 .content {
 
-    background-color: $color-secundario;
     position: relative;
-    margin-bottom: 1%;
-    height: 92%;
+    height: 100%;
     width: 100%;
-    top: 6%;
 
 }
 
 .avatarUsuario {
 
     position: absolute;
-    height: 90%;
-    width: 36%;
+    height: 85%;
+    width: 34%;
     left: 2%;
-    top: 5%;
+    top: 12%;
 
 }
 
@@ -63,10 +67,43 @@ app-header {
 .datosUsuario {
 
     background-color: white;
+    border-radius: 1vh;
     position: relative;
-    height: 90%;
+    height: 85%;
     width: 58%;
     left: 40%;
+    top: 12%;
+
+}
+
+#correoUsuario, #nombreUsuario {
+
+    position: relative;
+    font-weight: bold;
+    color: black;
+    font-size: 4vh;
+    width: 96%;
+    left: 2%;
+    top: 2%;
+
+}
+
+#tituloPedidos {
+
+    position: relative;
+    font-weight: bold;
+    color: black;
+    font-size: 4vh;
+    left: 2%;
     top: 5%;
+
+}
+
+#listaPedidos {
+
+    position: relative;
+    height: 52%;
+    width: 96%;
+    left: 2%;
 
 }

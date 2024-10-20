@@ -1,27 +1,31 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
-
 app-header {
 
-    position: sticky;
-    height: 100%;
+    position: relative;
+    width: 100%;
     z-index: 10;
+    height: 8%;
     top: 0%;
+
+}
+
+ion-content {
+
+    --background: #FFE1FF;
 
 }
 
 .tituloPagina, .content {
 
     position: relative;
-    top: 8%;
+    color: black;
 
 }
 
 .tituloPagina > #titulo {
 
     font-weight: bolder;
-    margin-bottom: 1.5%;
     text-align: center;
+    margin-bottom: 1%;
     font-size: 4.5vh;
     margin-top: 1%;
 
@@ -29,20 +33,21 @@ app-header {
 
 .content {
 
-    background-color: black;
-    height: max-content;
-    margin-bottom: 1%;
+    background-color: white;
+    min-height: max-content;
+    padding-bottom: 2%;
     border-radius: 1%;
+    height: 78%;
     width: 98%;
     left: 1%;
-
+    
 }
+
 #imagenProducto {
 
-    margin: 5% auto 3% auto;
-    position: relative;
-    display: block;
-    width: 85%;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
 
 }
 
@@ -52,11 +57,9 @@ app-header {
     white-space: nowrap;
     font-weight: bolder;
     position: relative;
+    margin-bottom: 0%;
     font-size: 3.5vh;
     overflow: hidden;
-    margin: 1% auto;
-    width: 85%;
-    top: 5%;
 
 }
 
@@ -67,20 +70,24 @@ app-header {
     position: relative;
     overflow: hidden;
     font-size: 3vh;
-    margin: 2% auto;
-    width: 85%;
-    top: 5%;
 
 }
 
 .datosProducto {
 
-    transition: all 0.5s ease;
-    box-sizing: border-box;
+    border: 1px solid black;
+    transition: all .5s ease;
+    margin: 0% 1% 2% 1%;
     background: white;
+    flex-basis: 240px;
     color: black;
-    height: 100%;
-    width: 23%;
+    width: 20%;
+
+}
+
+.datosProducto > .card-body {
+
+    padding: 0%;
 
 }
 
@@ -92,58 +99,84 @@ app-header {
 
 .filtros {
 
-    display: inline-flex;
     align-items: center;
     position: relative;
-    margin: 2% auto 0% auto;
-    width: 100%;
-    left: 1%;
+    font-size: 3.5vh;
+    flex-wrap: wrap;
+    display: flex;
+    width: 94%;
+    left: 3%;
+    top: 2%;
+
+}
+
+#inputProducto {
+
+    position: relative;
+    font-weight: bold;
+    width: 25%;
 
 }
 
 #selectCategoria {
 
+    position: relative;
+    font-weight: bold;
+    width: 25%;
     left: 3%;
- 
+
 }
 
-#selectCategoria, #inputProducto {
+#inputProducto > input, #selectCategoria > select {
 
-    --highlight-color: rgb(50, 80, 80);
-    --border-color: rgb(50, 50, 50);
-    width: 20%;
+    border: 1px solid black;
 
 }
 
 .listaProductos {
 
     justify-content: space-around;
-    margin: 1% auto 1% auto;
     position: relative;
     flex-wrap: wrap;
     display: flex;
-
-}
-
-.listaProductos::after {
-
-    visibility: hidden;
-    flex: 1 1 23%;
-    content: "";
+    width: 98%;
+    left: 1%;
+    top: 8%;
 
 }
 
 #carritoIcon {
 
-    color: $color-primario;
+    color: black;
     position: relative;
-    font-size: 8vh;
-    left: 54%;
+    font-size: 10vh;
+    left: 45%;
     
 }
 
-.popoverCarrito {
+#popoverCarrito {
 
-    --width: 35%;
+    border: 2px solid black;
+    transition: opacity 0.1s ease;
+    position: absolute;
+    border-radius: 1%;
+    z-index: 1000;
+    height: 42%;
+    width: 40%;
+    left: 57%;
+
+}
+
+#popoverCarrito.mostrar {
+
+    transform: scaleY(1);
+    opacity: 100;
+
+}
+
+#popoverCarrito.ocultar {
+
+    transform: scaleY(0);
+    opacity: 0;
 
 }

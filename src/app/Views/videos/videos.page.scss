@@ -1,26 +1,30 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
-
 app-header {
 
-    position: sticky;
-    height: 100%;
+    position: relative;
+    width: 100%;
     z-index: 10;
+    height: 8%;
     top: 0%;
+
+}
+
+ion-content {
+
+    --background: #FFE1FF;
 
 }
 
 .tituloPagina, .content {
 
     position: relative;
-    top: 8%;
+    color: black;
 
 }
 
 .tituloPagina > #titulo {
 
     font-weight: bolder;
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
     text-align: center;
     font-size: 4.5vh;
     margin-top: 1%;
@@ -29,10 +33,11 @@ app-header {
 
 .content {
 
-    background-color: black;
-    height: max-content;
-    margin-bottom: 1%;
+    background-color: white;
+    min-height: max-content;
+    padding-bottom: 2%;
     border-radius: 1%;
+    height: 78%;
     width: 98%;
     left: 1%;
 
@@ -40,10 +45,9 @@ app-header {
 
 #imagenVideo {
 
-    margin: 2% auto;
-    position: relative;
-    display: block;
-    width: 73%;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
 
 }
 
@@ -53,22 +57,28 @@ app-header {
     white-space: nowrap;
     font-weight: bolder;
     position: relative;
+    margin-bottom: 0%;
     font-size: 3.5vh;
     overflow: hidden;
-    margin: 1% auto;
-    width: 85%;
-    top: 5%;
 
 }
 
 .datosVideo {
 
-    transition: all 0.5s ease;
-    box-sizing: border-box;
+    border: 1px solid black;
+    transition: all .5s ease;
+    margin: 0% 1% 2% 1%;
     background: white;
+    flex-basis: 283px;
     color: black;
     height: 100%;
-    width: 31%;
+    width: 20%;
+
+}
+
+.datosVideo > .card-body {
+
+    padding: 0%;
 
 }
 
@@ -80,44 +90,49 @@ app-header {
 
 .filtros {
 
-    display: inline-flex;
     align-items: center;
     position: relative;
-    margin: 2% auto 0% auto;
-    width: 100%;
-    left: 1%;
+    font-size: 3.5vh;
+    flex-wrap: wrap;
+    display: flex;
+    width: 94%;
+    left: 3%;
+    top: 2%;
+
+}
+
+#inputVideo {
+
+    position: relative;
+    font-weight: bold;
+    width: 25%;
 
 }
 
 #selectCategoria {
 
+    position: relative;
+    font-weight: bold;
+    width: 25%;
     left: 3%;
- 
+
 }
 
-#selectCategoria, #inputVideo {
+#inputVideo > input, #selectCategoria > select {
 
-    --highlight-color: rgb(50, 80, 80);
-    --border-color: rgb(50, 50, 50);
-    width: 20%;
+    border: 1px solid black;
 
 }
 
 .listaVideos {
 
     justify-content: space-around;
-    margin: 1% auto 1% auto;
     position: relative;
     flex-wrap: wrap;
     display: flex;
-
-}
-
-.listaVideos::after {
-
-    visibility: hidden;
-    flex: 1 1 31%;
-    content: "";
+    width: 98%;
+    left: 1%;
+    top: 8%;
 
 }
 
@@ -135,6 +150,7 @@ app-header {
 
     transition: opacity 0.1s ease;
     position: absolute;
+    margin-bottom: 0%;
     color: white;
     font-size: 5vh;
     z-index: 2;

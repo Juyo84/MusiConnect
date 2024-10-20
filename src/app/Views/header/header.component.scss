@@ -1,10 +1,10 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
+$color-primario: #433878;
+$color-secundario: #E4B1F0;
 
 ion-header {
 
-  position: fixed;
-  height: 8%;
+  position: absolute;
+  height: 100%;
 
 }
 
@@ -33,6 +33,7 @@ ion-header {
 .toolbarPrincipal, .toolbarMenu{
 
   align-items: center;
+  color: white;
   display: flex;
 
 }
@@ -55,6 +56,7 @@ ion-header {
   font-weight: bolder;
   position: relative;
   font-size: 5vh;
+  margin: 0%;
   left: 1%;
 
 }
@@ -95,7 +97,29 @@ ion-header {
 
 .listaOpcionesUsuario {
 
+  background-color: $color-primario;
+  border: 2px solid black;
+  border-radius: 2%;
   padding: 0%;
+
+}
+
+#nombreUsuario {
+
+  font-weight: bold;
+  margin: 0%;
+  
+}
+
+#perfil {
+
+  --background: $color-primario;
+
+}
+
+#cerrarSesion {
+
+  --background: rgb(247, 59, 59);
 
 }
 
