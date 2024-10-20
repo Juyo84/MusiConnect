@@ -1,46 +1,16 @@
-$color-primario: #433878;
-$color-secundario: #E4B1F0;
-
-* {
-
-    background-color: $color-primario;
-
-}
-
-.listaProductos {
-
-    position: relative;
-    overflow-y: auto;
-    width: 100%;
-    height: 92%;
-
-}
-
 .datosProductoCarrito {
 
-    border-bottom: 1px solid black;
-    border-radius: 0%;
-    color: white;
-
-}
-
-.columnaImagen, .columnaNombre, .columnaTipo {
-
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
     display: flex;
     
 }
 
-.columnaImagen {
+#imagenCarrito {
 
-    padding: 0%;
-
-}
-
-.datosProductoCarrito > .row {
-
-    margin: 0%;
+    border-radius: 25%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 15%;
 
 }
 
@@ -48,74 +18,65 @@ $color-secundario: #E4B1F0;
 
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-bottom: 0%;
     overflow: hidden;
     font-size: 3vh;
     
 }
 
-#imagenCarrito {
-
-    object-fit: cover;
-    width: 100%;
-    
-}
-
 #nombreCarrito {
     
-    font-weight: bold;
+    position: absolute;
+    width: 65%;
+    left: 16%;
+    top: 2%;
     
 }
 
-#tipoCarrito, #cantidadCompra, #tiempoRenta {
+#precioCarrito {
 
-    margin-bottom: 0%;
+    position: absolute;
+    width: 65%;
+    bottom: 0%;
+    left: 16%;
 
 }
 
 .tipoCarrito {
 
-    flex-direction: column;
-    align-items: center;
-    display: flex;
+    position: relative;
+    text-align: center;
+    width: 15%;
+    left: 70%;
 
 }
 
 #tipoCarrito {
 
     text-align: center;
-    
+
 }
 
 #cantidadCompra {
 
     text-align: center;
- 
+
 }
 
 #tiempoRenta {
 
-    border: red 1px solid;
+    border: red 0.2vh solid;
     text-align: center;
-    width: 80%;
-    
+
 }
 
 .resumenCarrito {
-    
+
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    color: white;
+    position: relative;
     display: flex;
-    width: 100%;
-    height: 8%;
-
-}
-
-#verCarrito, .totalCarrito {
-
-    margin-bottom: 0%;
+    width: 96%;
+    left: 2%;
 
 }
 

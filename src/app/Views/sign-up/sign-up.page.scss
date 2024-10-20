@@ -57,8 +57,9 @@
 
 #nombreUsuario, #contraseña, #repetirContraseña, #correo {
 
+    --highlight-color: rgb(50, 80, 80);
+    --border-color: black;
     position: absolute;
-    font-weight: bold;
     color: black;
     width: 43%;
 
@@ -79,13 +80,13 @@
 
 #crearCuenta {
 
-    background-color: blue;
+    --background: blue;
     position: relative;
     color: white;
     margin: 0%;
     width: 90%;
     left: 5%;
-    top: 50%;
+    top: 45%;
 
 }
 
@@ -97,7 +98,7 @@
     font-size: 2.5vh;
     margin-top: 0%;
     color: black;
-    top: 67%;
+    top: 62%;
 
 }
 

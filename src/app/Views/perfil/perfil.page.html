@@ -1,6 +1,5 @@
-<app-header></app-header>
-
 <ion-content>
+  <app-header></app-header>
 
   <div class="content">
     
@@ -12,60 +11,11 @@
 
     </div>
 
-    <div class="datosUsuario">
+    <ion-card class="datosUsuario">
 
-      <div id="nombreUsuario" class="input">
-        <label for="nombreUsuario" class="form-label">Nombre de Usuario</label>
-        <input type="text" class="form-control" placeholder="usuario" aria-label="Nombre Usuario" disabled>
-      </div>      
 
-      <div id="correoUsuario" class="input">
-        <label for="correoUsuario" class="form-label">Correo Electronico</label>
-        <input type="text" class="form-control" placeholder="correo@outlook.com" aria-label="Correo Electronico" disabled>
-      </div>
 
-      <p id="tituloPedidos">Pedidos</p>
-
-      <div class="table-responsive" id="listaPedidos">
-
-        <table class="table caption-top table-hover table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Fecha</th>
-              <th scope="col">Tipo</th>
-              <th scope="col">Producto</th>
-              <th scope="col">Precio</th>
-              <th scope="col">Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">19/10/2024</th>
-              <td>Compra</td>
-              <td>Producto 1</td>
-              <td>$2000.00</td>
-              <td>En paqueteria</td>
-            </tr>
-            <tr>
-              <th scope="row">19/10/2024</th>
-              <td>Renta S</td>
-              <td>Producto 3</td>
-              <td>$1000.00</td>
-              <td>En camino</td>
-            </tr>
-            <tr>
-              <th scope="row">15/10/2024</th>
-              <td>Curso</td>
-              <td>Curso 1</td>
-              <td>$150.00</td>
-              <td>Acceso</td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-
-    </div>
+    </ion-card>
 
   </div>
 

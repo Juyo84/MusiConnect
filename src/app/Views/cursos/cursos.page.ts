@@ -1,6 +1,5 @@
-import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonContent, IonInput, IonSelect, IonSelectOption, IonCard, IonIcon, IonPopover } from '@ionic/angular/standalone';
-import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { addCircleOutline, cart } from 'ionicons/icons';
 import { addIcons } from 'ionicons';
@@ -12,7 +11,6 @@ import { CarritoComponent } from '../carrito/carrito.component';
   styleUrls: ['./cursos.page.scss'],
   standalone: true,
   imports: [
-    CommonModule,
     IonContent,
     HeaderComponent,
     IonInput,
@@ -25,32 +23,13 @@ import { CarritoComponent } from '../carrito/carrito.component';
 })
 export class CursosPage implements OnInit {
 
-  constructor(private eRef: ElementRef) {
+  constructor() {
 
     addIcons({ addCircleOutline, cart });
 
    }
 
   ngOnInit() {
-  }
-
-  estadoCarrito = false;
-
-  cambiarEstadoCarrito() {
-
-    this.estadoCarrito = !this.estadoCarrito;
-
-  }
-
-  @HostListener('document:click', ['$event'])
-  clickOut(event: any) {
-
-    if (!this.eRef.nativeElement.contains(event.target)) {
-    
-      this.estadoCarrito = false;
-    
-    }
-
   }
 
 }

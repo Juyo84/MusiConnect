@@ -1,5 +1,5 @@
-$color-primario: #433878;
-$color-secundario: #E4B1F0;
+$color-primario: rgb(50, 80, 80);
+$color-secundario: rgb(30, 30, 30);
 
 .contenidoIzquierda, .contenidoDerecha {
 
@@ -47,7 +47,7 @@ $color-secundario: #E4B1F0;
 
 #botonIniciar {
 
-    --background: #433878;
+    --background: rgb(50, 80, 80);
     font-size: 5vh;
     color: white;
 

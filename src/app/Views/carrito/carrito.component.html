@@ -1,114 +1,31 @@
-<div class="listaProductos">
-
-  <div class="card datosProductoCarrito">
-    <div class="row">
-      <div class="col-3 columnaImagen">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-      </div>
-      <div class="col-6 columnaNombre">
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioCarrito">$00000.00</p>
-      </div>
-      <div class="col-3 columnaTipo">
-        <div class="tipoCarrito">
-          <p id="tipoCarrito">C</p>
-          <p id="cantidadCompra">x1000</p>
-        </div>
-      </div>
+<ion-list lines="full">
+  <ion-item [button]="true" class="datosProductoCarrito">
+    <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
+    <p id="nombreCarrito">Nombre Producto</p>
+    <p id="precioCarrito">$00000.00</p>
+    <div class="tipoCarrito">
+      <p id="tipoCarrito">C</p>
+      <p id="cantidadCompra">x1000</p>
     </div>
-  </div>
-  
-  <div class="card datosProductoCarrito">
-    <div class="row">
-      <div class="col-3 columnaImagen">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-      </div>
-      <div class="col-6 columnaNombre">
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioCarrito">$00000.00</p>
-      </div>
-      <div class="col-3 columnaTipo">
-        <div class="tipoCarrito">
-          <p id="tipoCarrito">R</p>
-          <p id="tiempoRenta">M</p>
-        </div>
-      </div>
+  </ion-item>
+  <ion-item [button]="true" class="datosProductoCarrito">
+    <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
+    <p id="nombreCarrito">Nombre Producto</p>
+    <p id="precioCarrito">$00000.00</p>
+    <div class="tipoCarrito">
+      <p id="tipoCarrito">R</p>
+      <p id="tiempoRenta">S</p>
     </div>
-  </div>
-
-  <div class="card datosProductoCarrito">
-    <div class="row">
-      <div class="col-3 columnaImagen">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-      </div>
-      <div class="col-6 columnaNombre">
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioCarrito">$00000.00</p>
-      </div>
-      <div class="col-3 columnaTipo">
-        <div class="tipoCarrito">
-          <p id="tipoCarrito">R</p>
-          <p id="tiempoRenta">A</p>
-        </div>
-      </div>
+  </ion-item>
+  <ion-item [button]="true" class="datosProductoCarrito">
+    <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
+    <p id="nombreCarrito">Nombre Producto</p>
+    <p id="precioCarrito">$00000.00</p>
+    <div class="tipoCarrito">
+      <p id="tipoCarrito">CO</p>
     </div>
-  </div>
-  
-  <div class="card datosProductoCarrito">
-    <div class="row">
-      <div class="col-3 columnaImagen">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-      </div>
-      <div class="col-6 columnaNombre">
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioCarrito">$00000.00</p>
-      </div>
-      <div class="col-3 columnaTipo">
-        <div class="tipoCarrito">
-          <p id="tipoCarrito">R</p>
-          <p id="tiempoRenta">S</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card datosProductoCarrito">
-    <div class="row">
-      <div class="col-3 columnaImagen">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-      </div>
-      <div class="col-6 columnaNombre">
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioCarrito">$00000.00</p>
-      </div>
-      <div class="col-3 columnaTipo">
-        <div class="tipoCarrito">
-          <p id="tipoCarrito">R</p>
-          <p id="tiempoRenta">S</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card datosProductoCarrito">
-    <div class="row">
-      <div class="col-3 columnaImagen">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-      </div>
-      <div class="col-6 columnaNombre">
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioCarrito">$00000.00</p>
-      </div>
-      <div class="col-3 columnaTipo">
-        <div class="tipoCarrito">
-          <p id="tipoCarrito">CO</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
+  </ion-item>
+</ion-list>
 <div class="resumenCarrito">
   <p id="verCarrito" (click)="irListaCarrito()">Ver todo</p>
   <p class="totalCarrito">Total: <span id="totalFinal">$00000.00</span></p>

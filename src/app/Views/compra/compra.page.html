@@ -1,111 +1,37 @@
-<app-header></app-header>
-
 <ion-content>
+  <app-header></app-header>
   
   <div class="tituloPagina">
 
-    <p id="titulo">COMPRA</p>
+    <p id="titulo">Compra</p>
 
   </div>
 
   <div class="content">
     
     <div class="filtros">
+
+      <ion-input label="Busqueda" labelPlacement="stacked" fill="outline" id="inputProducto"></ion-input>
   
-      <div id="inputProducto" class="input lg-3">
-        <label for="inputProducto" class="form-label">Busqueda</label>
-        <input type="text" class="form-control" placeholder="Busqueda" aria-label="Busqueda" aria-describedby="basic-addon1">
-      </div>
+      <ion-select label="Categoria" interface="popover" labelPlacement="stacked" fill="outline" [multiple]="true" id="selectCategoria">
+        <ion-select-option value="opcion1">Opcion 1</ion-select-option>
+      </ion-select>
 
-      <div id="selectCategoria" class="input lg-3">
-        <label for="selectCategoria" class="form-label">Categoria</label>
-        <select class="form-select" aria-label="Categoria" label="Categoria">
-          <option selected value="Todos">Todos</option>
-          <option value="opcion1">Opcion 1</option>
-        </select>
-      </div>
+      <ion-icon name="cart" id="carritoIcon"></ion-icon>
+      <ion-popover trigger="carritoIcon" side="bottom" alignment="end" size="auto" [dismissOnSelect]="true" class="popoverCarrito">
+        <ng-template>
+          <app-carrito></app-carrito>
+        </ng-template>
+      </ion-popover>
 
-      <ion-icon name="cart" id="carritoIcon" (click)="cambiarEstadoCarrito()"></ion-icon>
-
-    </div>
-
-    <div id="popoverCarrito" [ngClass]="{'mostrar': estadoCarrito, 'ocultar': !estadoCarrito}">
-      <app-carrito></app-carrito>
     </div>
 
     <div class="listaProductos">
-
-      <div class="card datosProducto">
+      <ion-card class="datosProducto">
         <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-      
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-      
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-      
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-      
-      <div class="card datosProducto">
-        <img alt="Producto" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenProducto"/>
-        <div class="card-body">
-          <p id="nombreProducto">NOMBRE PRODUCTO</p>
-          <p id="precioProducto">$00000.00</p>
-        </div>
-      </div>
-
-
+        <p id="nombreProducto">NOMBRE PRODUCTO</p>
+        <p id="precioProducto">$00000.00</p>
+      </ion-card>
     </div>
 
   </div>

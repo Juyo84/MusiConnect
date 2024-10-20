@@ -46,8 +46,6 @@
 
     --highlight-color: rgb(50, 80, 80);
     --border-color: black;
-    position: relative;
-    font-weight: bold;
     color: black;
     width: 90%;
 
@@ -58,7 +56,6 @@
     --highlight-color: rgb(50, 80, 80);
     --border-color: black;
     position: relative;
-    font-weight: bold;
     margin-top: 2%;
     color: black;
     width: 90%;
@@ -68,7 +65,7 @@
 
 #iniciarSesion {
 
-    background-color: blue;
+    --background: blue;
     margin-top: 10%;
     color: white;
     width: 90%;

@@ -1,19 +1,12 @@
-$color-primario: #7E60BF;
-$color-secundario: #FFE1FF;
+$color-primario: rgb(50, 80, 80);
+$color-secundario: rgb(30, 30, 30);
 
 app-header {
 
-    position: relative;
-    width: 100%;
+    position: sticky;
+    height: 100%;
     z-index: 10;
-    height: 8%;
     top: 0%;
-
-}
-
-ion-content {
-
-    --background: #FFE1FF;
 
 }
 
@@ -22,8 +15,9 @@ ion-content {
     background-color: white;
     position: relative;
     margin-bottom: 1%;
-    height: 100%;
+    height: 92%;
     width: 100%;
+    top: 8%;
 
 }
 
@@ -54,7 +48,6 @@ ion-content {
 .contenidoModulo {
 
     position: relative;
-    color: black;
     height: 100%;
     width: 100%;
 

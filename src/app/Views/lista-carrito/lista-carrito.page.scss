@@ -3,31 +3,24 @@ $color-secundario: rgb(30, 30, 30);
 
 app-header {
 
-    position: relative;
-    width: 100%;
+    position: sticky;
+    height: 100%;
     z-index: 10;
-    height: 8%;
     top: 0%;
-
-}
-
-ion-content {
-
-    --background: #FFE1FF;
 
 }
 
 .tituloPagina, .content {
 
     position: relative;
-    color: black;
+    top: 8%;
 
 }
 
 .tituloPagina > #titulo {
 
     font-weight: bolder;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
     text-align: center;
     font-size: 4.5vh;
     margin-top: 1%;
@@ -36,7 +29,7 @@ ion-content {
 
 .content {
 
-    background-color: white;
+    background-color: black;
     min-height: min-content;
     position: relative;
     margin-bottom: 1%;

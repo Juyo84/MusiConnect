@@ -8,17 +8,11 @@
 
       <p id="titulo">Inicio de Sesion</p>
 
-      <div id="nombreUsuario" class="input">
-        <label for="nombreUsuario" class="form-label">Nombre Usuario</label>
-        <input type="text" class="form-control" placeholder="Nombre Usuario" aria-label="Nombre Usuario" aria-describedby="basic-addon1">
-      </div>
+      <ion-input label="Nombre Usuario" labelPlacement="stacked" fill="outline" id="nombreUsuario"></ion-input>
   
-      <div id="contraseña" class="input">
-        <label for="contraseña" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
-      </div>
+      <ion-input type="password" label="Contraseña" labelPlacement="stacked" fill="outline" id="contraseña"></ion-input>
 
-      <button type="button" class="btn" id="iniciarSesion" (click)="irRuta('inicio')">Inicar Sesion</button>
+      <ion-button id="iniciarSesion" (click)="irRuta('inicio')">Iniciar Sesion</ion-button>
   
       <p id="contraOlvidada">¿Olvidaste la contraseña?</p>
   
