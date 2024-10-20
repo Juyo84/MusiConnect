@@ -10,50 +10,166 @@
 
   <div class="content">
 
-      <div class="headerLista">
-        <p id="labelDatosProducto">Datos Producto</p>
-        <p id="labelPrecioTotal">Precio Total</p>
-        <p id="labelTipoProducto">Tipo Producto</p>
-        <p id="labelEliminar">Eliminar</p>
-      </div>
+    <div class="table-responsive" id="listaPedidos">
 
-      <ion-item class="datosProductoCarrito">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioUnitarioCarrito">$00000.00</p>
-        <p id="precioFinalCarrito">$00000.00</p>
-        <div class="tipoCarrito">
-          <p>C</p>
-          <p>x1000</p>
-        </div>
-        <ion-icon name="trash" id="eliminarProducto"></ion-icon>
-      </ion-item>
-      <ion-item class="datosProductoCarrito">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioUnitarioCarrito">$00000.00</p>
-        <p id="precioFinalCarrito">$00000.00</p>
-        <div class="tipoCarrito">
-          <p>R</p>
-          <p>4 Semanas</p>
-        </div>
-        <ion-icon name="trash" id="eliminarProducto"></ion-icon>
-      </ion-item>
-      <ion-item class="datosProductoCarrito">
-        <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>
-        <p id="nombreCarrito">Nombre Producto</p>
-        <p id="precioUnitarioCarrito">$00000.00</p>
-        <p id="precioFinalCarrito">$00000.00</p>
-        <div class="tipoCarrito">
-          <p>CO</p>
-        </div>
-        <ion-icon name="trash" id="eliminarProducto"></ion-icon>
-      </ion-item>
+      <table class="table caption-top table-hover table-striped align-middle">
+        <thead>
+          <tr>
+            <th scope="col">Datos Producto</th>
+            <th scope="col">Precio Total</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="row">
+                <div class="col-2">
+                  <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>    
+                </div>
+                <div class="col-10 columnaDatosProducto">
+                  <p id="nombreCarrito">Nombre Producto</p>
+                  <p id="precioUnitarioCarrito">$00000.00</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p id="precioFinalCarrito">$00000.00</p>
+            </td>
+            <td>
+              <div class="tipoCarrito">
+                <p>C</p>
+                <p>x1000</p>
+              </div>      
+            </td>
+            <td>
+              <div class="columnaEliminar">
+                <ion-icon name="trash" id="eliminarProducto"></ion-icon>
+              </div>
+            </td>
+          </tr>
 
-      <div class="resumenCarrito">
-        <ion-button id="botonComprar">Comprar Carrito</ion-button>
-        <p class="totalCarrito">Total: <span id="totalFinal">$00000.00</span></p>
-      </div>
+          <tr>
+            <td>
+              <div class="row">
+                <div class="col-2">
+                  <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>    
+                </div>
+                <div class="col-10 columnaDatosProducto">
+                  <p id="nombreCarrito">Nombre Producto</p>
+                  <p id="precioUnitarioCarrito">$00000.00</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p id="precioFinalCarrito">$00000.00</p>
+            </td>
+            <td>
+              <div class="tipoCarrito">
+                <p id="tipoCarrito">R</p>
+                <p id="tiempoRenta">M</p>
+              </div>
+            </td>
+            <td>
+              <div class="columnaEliminar">
+                <ion-icon name="trash" id="eliminarProducto"></ion-icon>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="row">
+                <div class="col-2">
+                  <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>    
+                </div>
+                <div class="col-10 columnaDatosProducto">
+                  <p id="nombreCarrito">Nombre Producto</p>
+                  <p id="precioUnitarioCarrito">$00000.00</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p id="precioFinalCarrito">$00000.00</p>
+            </td>
+            <td>
+              <div class="tipoCarrito">
+                <p id="tipoCarrito">R</p>
+                <p id="tiempoRenta">A</p>
+              </div>
+            </td>
+            <td>
+              <div class="columnaEliminar">
+                <ion-icon name="trash" id="eliminarProducto"></ion-icon>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="row">
+                <div class="col-2">
+                  <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>    
+                </div>
+                <div class="col-10 columnaDatosProducto">
+                  <p id="nombreCarrito">Nombre Producto</p>
+                  <p id="precioUnitarioCarrito">$00000.00</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p id="precioFinalCarrito">$00000.00</p>
+            </td>
+            <td>
+              <div class="tipoCarrito">
+                <p id="tipoCarrito">R</p>
+                <p id="tiempoRenta">S</p>
+              </div>
+            </td>
+            <td>
+              <div class="columnaEliminar">
+                <ion-icon name="trash" id="eliminarProducto"></ion-icon>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="row">
+                <div class="col-2">
+                  <img alt="ProductoCarrito" src="https://ionicframework.com/docs/img/demos/avatar.svg" id="imagenCarrito"/>    
+                </div>
+                <div class="col-10 columnaDatosProducto">
+                  <p id="nombreCarrito">Nombre Producto</p>
+                  <p id="precioUnitarioCarrito">$00000.00</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p id="precioFinalCarrito">$00000.00</p>
+            </td>
+            <td>
+              <div class="tipoCarrito">
+                <p id="tipoCarrito">CO</p>
+              </div>
+            </td>
+            <td>
+              <div class="columnaEliminar">
+                <ion-icon name="trash" id="eliminarProducto"></ion-icon>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="resumenCarrito">
+      <button type="button" class="btn" id="botonComprar">Comprar Carrito</button>
+      <p class="totalCarrito">Total: <span id="totalFinal">$00000.00</span></p>
+    </div>
 
   </div>
 
