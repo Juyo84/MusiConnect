@@ -10,21 +10,33 @@
 
       <div class="inputsDatos">
 
-        <ion-input label="Nombre Usuario" labelPlacement="stacked" fill="outline" id="nombreUsuario"></ion-input>
-  
-        <ion-input label="Correo" labelPlacement="stacked" fill="outline" id="correo"></ion-input>
+        <div id="nombreUsuario" class="input">
+          <label for="nombreUsuario" class="form-label">Nombre Usuario</label>
+          <input type="text" class="form-control" placeholder="Nombre Usuario" aria-label="Nombre Usuario" aria-describedby="basic-addon1">
+        </div>
+
+        <div id="correo" class="input">
+          <label for="correo" class="form-label">Correo Electronico</label>
+          <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Correo Electronico" aria-describedby="basic-addon1">
+        </div>
 
       </div>
 
       <div class="inputsContraseñas">
 
-        <ion-input type="password" label="Contraseña" labelPlacement="stacked" fill="outline" id="contraseña"></ion-input>
-  
-        <ion-input type="password" label="Repetir Contraseña" labelPlacement="stacked" fill="outline" id="repetirContraseña"></ion-input>
+        <div id="contraseña" class="input">
+          <label for="contraseña" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
+        </div>
+
+        <div id="repetirContraseña" class="input">
+          <label for="repetirContraseña" class="form-label">Repetir Contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
+        </div>
 
       </div>
 
-      <ion-button id="crearCuenta" (click)="irRuta('inicio')">Ingresar</ion-button>
+      <button type="button" class="btn" id="crearCuenta" (click)="irRuta('inicio')">Ingresar</button>
 
       <p id="conCuenta">¿Ya tienes una cuenta? <span id="iniciarSesion" (click)="irRuta('log-in')">Inicia sesion</span></p>
   
