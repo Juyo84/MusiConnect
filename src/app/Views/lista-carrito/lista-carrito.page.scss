@@ -1,5 +1,5 @@
-$color-primario: rgb(50, 80, 80);
-$color-secundario: rgb(30, 30, 30);
+$color-primario: #433878;
+$color-secundario: #E4B1F0;
 
 app-header {
 
@@ -47,20 +47,17 @@ ion-content {
 
 }
 
-.datosProductoCarrito {
+#listaPedidos th {
 
-    --background: black;
-    align-items: center;
-    display: flex;
-    
+    text-align: center;
+    font-size: 4vh;
+
 }
 
 #imagenCarrito {
 
-    border-radius: 25%;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    width: 10%;
+    position: relative;
+    width: 80%;
 
 }
 
@@ -68,72 +65,73 @@ ion-content {
 
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-bottom: 0%;
     overflow: hidden;
     font-size: 4vh;
     
 }
 
+.columnaDatosProducto {
+
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 0%;
+
+}
+
 #nombreCarrito {
     
-    position: absolute;
-    width: 45%;
-    left: 12%;
-    top: 2%;
-    
-}
-
-#precioUnitarioCarrito {
-
-    position: absolute;
-    width: 45%;
-    bottom: 0%;
-    left: 12%;
-
-}
-
-#precioFinalCarrito {
-
-    position: absolute;
-    text-align: center;
-    width: 15%;
-    left: 60%;
+    font-weight: bold;
 
 }
 
 .tipoCarrito {
 
-    position: relative;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+
+.tipoCarrito > p {
+
+    margin-bottom: 0%;
     font-size: 4vh;
-    width: 15%;
-    left: 68%;
+
+}
+
+.columnaEliminar {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
 }
 
 #eliminarProducto {
 
-    color: $color-primario;
-    position: relative;
-    font-size: 5vh;
-    left: 71%;
+    font-size: 6vh;
 
 }
 
 #botonComprar {
 
-    --background: rgb(50, 80, 80);
+    background-color: $color-primario;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
     color: white;
+    width: 30%;
     
 }
 
 .resumenCarrito {
     
     justify-content: space-around;
-    border: 0.1vh solid white;
-    background-color: black;
+    background-color: white;
     align-items: center;
     position: sticky;
-    color: white;
+    color: black;
     font-size: 4vh;
     display: flex;
     bottom: 0%;
@@ -144,53 +142,12 @@ ion-content {
 .totalCarrito {
     
     font-weight: bold;
+    margin-bottom: 0%;
 
 }
 
 #totalFinal {
 
     font-weight: 100;
-
-}
-
-.headerLista {
-
-    font-weight: bold;
-    font-size: 3.5vh;
-    display: flex;
-
-}
-
-#labelDatosProducto {
-
-    position: relative;
-    text-align: center;
-    width: 57%;
-
-}
-
-#labelPrecioTotal {
-
-    position: relative;
-    text-align: center;
-    width: 15%;
-    left: 3%;
-
-}
-
-#labelTipoProducto {
-
-    position: relative;
-    text-align: center;
-    width: 15%;
-    left: 5%;
-
-}
-
-#labelEliminar {
-
-    position: relative;
-    text-align: center;
-    left: 6%;
 
 }
