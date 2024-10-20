@@ -157,7 +157,6 @@ ion-content {
     opacity: 1;
     width: 80%;
     left: 1%;
-    top: -4%;
 
 }
 
@@ -166,18 +165,17 @@ ion-content {
     transition: opacity 0.1s ease;
     position: absolute;
     color: white;
-    font-size: 5vh;
+    font-size: 8vh;
     z-index: 2;
     opacity: 0;
-    left: 97%;
-    top: 2%;
+    left: 95%;
 
 }
 
 #video {
 
     position: relative;
-    height: 100%;
+    height: 72%;
     width: 100%;
     z-index: 1;
 
