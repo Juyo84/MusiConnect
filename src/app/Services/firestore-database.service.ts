@@ -16,8 +16,8 @@ export class FirestoreDatabaseService {
   }
 
   // Nuevo ID
-  crearId(): string {
-    return doc(collection(this.firestore, 'tu-coleccion')).id; // Ajusta la colección aquí
+  crearId(coleccion: string): string {
+    return doc(collection(this.firestore, coleccion)).id; // Ajusta la colección aquí
   }
 
   // Obtener un Documento

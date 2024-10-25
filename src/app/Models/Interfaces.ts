@@ -24,8 +24,8 @@ export interface Usuario {
     UsuarioID: string,
     Nombre: string,
     Correo: string,
-    Contraseña: string,
-    Rol: number
+    Contrasena: string,
+    Rol: string
 
 }
 
